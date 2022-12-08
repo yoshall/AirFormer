@@ -1,8 +1,9 @@
 # AirFormer
 
-This repo is the implementation of our manuscript entitled [AirFormer: Predicting Nationwide Air Quality in China with Transformers](https://arxiv.org/pdf/2211.15979.pdf). In this study, we present a novel Transformer architecture termed AirFormer to collectively predict nationwide air quality in China over the next 72 hours, with an unprecedented fine spatial granularity covering thousands of locations. The source code is well commented.
+This repo is the implementation of our manuscript entitled [AirFormer: Predicting Nationwide Air Quality in China with Transformers](https://arxiv.org/pdf/2211.15979.pdf). The code is based on Pytorch 1.10, and tested on Ubuntu 16.04 with a NVIDIA RTX A6000 GPU with 48 GB memory. 
 
-*This is an implementation of AirFormer using Pytorch 1.10, tested on Ubuntu 16.04 with a NVIDIA RTX A6000 GPU with 48 GB memory.*
+In this study, we present a novel Transformer architecture termed AirFormer to collectively predict nationwide air quality in China over the next 72 hours, with an unprecedented fine spatial granularity covering thousands of locations.
+
 
 
 ## Framework
@@ -24,7 +25,7 @@ AirFormer uses the following dependencies:
 ``` -->
 
 ## Dataset 
-The air quality (and meteorology) dataset we use in our paper is larger than 500GB, which cannot be easily shared in this appendix. Thus we process a tiny version of our dataset to facilitate the understanding of the source code. This tiny version consists of 20 training instances, 20 validation instances, and 20 test instances. 
+The air quality (and meteorology) dataset used in our paper is larger than 500GB. We process a tiny version of our dataset to facilitate the understanding of the source code. This tiny version consists of 20 training instances, 20 validation instances, and 20 test instances. Please unzip the files under the data folder before running our code.
 
 
 ## Folder Structure
@@ -34,7 +35,6 @@ We list the code of the major modules as follows:
 - The trainer/tester: [click here](src/trainers/airformer_stochastic_trainer.py)/[click here](src/trainers/airformer_trainer.py)/[click here](src/base/trainer.py)
 - Data preparation and preprocessing are located at [click here](src/utils/helper.py).
 - Metric computations: [click here](src/utils/metrics.py).
-- *Before running our code, please unzip the files under the data folder.*
 
 ## Arguments
 We introduce some major arguments of our main function here.
