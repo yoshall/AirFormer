@@ -34,6 +34,7 @@ We list the code of the major modules as follows:
 - The trainer/tester: [click here](src/trainers/airformer_stochastic_trainer.py)/[click here](src/trainers/airformer_trainer.py)/[click here](src/base/trainer.py)
 - Data preparation and preprocessing are located at [click here](src/utils/helper.py).
 - Metric computations: [click here](src/utils/metrics.py).
+- *Before running our code, please unzip the files under the data folder.*
 
 ## Arguments
 We introduce some major arguments of our main function here.
@@ -60,8 +61,6 @@ Model hyperparameters:
 - dartboard: which dartboard partition to use. 0: 50-200, 1: 50-200-500, 2: 50, 3: 25-100-250.
 - stochastic_flag: whether to turn on the stochastic stage
 - spatial_flag: whether to turn on DS-MAS
-
-
 
 ## Model Training
 Before running our code, please add the path of this repo to PYTHONPATH.
