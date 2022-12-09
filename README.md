@@ -7,7 +7,7 @@ In this study, we present a novel Transformer architecture termed AirFormer to c
 
 
 ## Framework
-![](img/airformer_framework.png)
+<img src="img/airformer_framework.png" width="400px">
 
 
 ## Requirements
@@ -16,7 +16,7 @@ AirFormer uses the following dependencies:
 
 * [Pytorch 1.10](https://pytorch.org/get-started/locally/) and its dependencies
 * Numpy and Scipy
-* CUDA 11.3 or latest version. And **cuDNN** is highly recommended
+* CUDA 11.3 or latest version, cuDNN.
 
 
 <!-- If you find this code and dataset useful for your research, please cite our paper:

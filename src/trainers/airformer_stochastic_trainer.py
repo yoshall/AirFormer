@@ -21,6 +21,7 @@ class Trainer(BaseTrainer):
         self.alpha = 1
 
     def _calculate_supports(self, adj_mat, filter_type):
+        # For GNNs, not for AirFormer
         num_nodes = adj_mat.shape[0]
         new_adj = adj_mat + np.eye(num_nodes)
 
@@ -60,7 +61,7 @@ class Trainer(BaseTrainer):
 
         pred_loss = self.loss_fn(pred, label, 0.0)
         # negative elbo
-        rec_loss = self.rec_mae(X_rec[..., :6], X[..., :6])
+        rec_loss = self.rec_mae(X_rec[..., :6], X[..., :6]) # only reconstructing air quality-related attributes
         loss = pred_loss + self.alpha * (rec_loss + kl_loss)
 
         loss.backward()
