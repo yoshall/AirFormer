@@ -7,8 +7,10 @@ In this study, we present a novel Transformer architecture termed AirFormer to c
 
 
 ## Framework
-<img src="img/airformer_framework.png" width="400px">
 
+|||
+|--|--|
+| <img src="img/intro.png" width="350px"> | <img src="img/airformer_framework.png" width="380px"> |
 
 ## Requirements
 
